@@ -59,16 +59,16 @@ Revision: $Rev: 12501 $
 #ifndef GLOBAL_H            // Guard against multiple inclusion
 #define GLOBAL_H
 
-#define U8    unsigned char
-#define I8    signed char
-#define U16   unsigned short
-#define I16   signed short
+typedef unsigned char U8;
+typedef signed char I8;
+typedef unsigned short U16;
+typedef signed short I16;
 #ifdef __x86_64__
 #define U32   unsigned
 #define I32   int
 #else
-#define U32   unsigned long
-#define I32   signed long
+typedef unsigned long U32;
+typedef signed long I32;
 #endif
 
 //
